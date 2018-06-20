@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 
 import com.example.administrator.studyview.R;
 import com.example.lib_view.tick.CTickView;
+import com.example.lib_view.tick.STickView;
 
 /**
  * @author chenjiawang
@@ -20,6 +21,7 @@ import com.example.lib_view.tick.CTickView;
 
 public class CTickViewTest extends LinearLayout implements View.OnClickListener{
     private CTickView McTickView;
+    private STickView mSTickVIew;
     public CTickViewTest(Context context) {
         super(context);
         init(context);
@@ -38,6 +40,7 @@ public class CTickViewTest extends LinearLayout implements View.OnClickListener{
     private void init(Context context){
         View view =  LayoutInflater.from(context).inflate(R.layout.layout_ctick,this,true);
         McTickView =(CTickView)view.findViewById(R.id.ctv_tick);
+        mSTickVIew = (STickView) view.findViewById(R.id.stv_tick);
         view.findViewById(R.id.btn_ctv_start).setOnClickListener(this);
         view.findViewById(R.id.btn_ctv_stop).setOnClickListener(this);
 
@@ -47,9 +50,11 @@ public class CTickViewTest extends LinearLayout implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.btn_ctv_start:
                 McTickView.start();
+                mSTickVIew.start();
                 break;
             case R.id.btn_ctv_stop:
                 McTickView.stop();
+                mSTickVIew.stop();
                 break;
         }
     }

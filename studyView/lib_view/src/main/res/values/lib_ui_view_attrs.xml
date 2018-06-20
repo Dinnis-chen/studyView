@@ -5,4 +5,12 @@
         <attr name="lib_ui_view_ctr_colorCircle" format="color"/>
         <attr name="lib_ui_view_ctr_strokeWidth" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="lib_ui_view_ToggleButton">
+        <attr name="lib_ui_view_tbtn_colorNormal" format="color" />
+        <attr name="lib_ui_view_tbtn_colorLight" format="color" />
+        <attr name="lib_ui_view_tbtn_colorPadding" format="color" />
+        <attr name="lib_ui_view_tbtn_padding" format="dimension" />
+        <attr name="lib_ui_view_tbtn_duration" format="integer" />
+    </declare-styleable>
 </resources>

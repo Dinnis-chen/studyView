@@ -16,6 +16,15 @@
             app:lib_ui_view_ctv_color="#000000"
             app:lib_ui_view_ctr_colorCircle="#47b018"
             app:lib_ui_view_ctr_strokeWidth="5dp" />
+        <com.example.lib_view.tick.STickView
+            android:id="@+id/stv_tick"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            app:lib_ui_view_ctv_color="#000000"
+            app:lib_ui_view_ctr_colorCircle="#47b018"
+            app:lib_ui_view_ctr_strokeWidth="5dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

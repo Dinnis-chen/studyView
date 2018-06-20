@@ -14,6 +14,7 @@ import android.view.animation.LinearInterpolator;
 
 import com.example.lib_view.R;
 
+
 /**
  * @author chenjiawang
  * @package com.example.lib_view.tick
@@ -27,13 +28,13 @@ public class CTickView extends View {
     private int mWidth;
     private int mHeight;
 
-    private int mColor;
-    private int mColorCircle;
-    private float strokeWidth;
-    private Path mPathCircle;
-    private Path mPathStar;
-    private Paint mPaintCircle;
-    private Paint mPaintStar;
+    private int mColor;//图案颜色
+    private int mColorCircle;//背景颜色
+    private float strokeWidth;//图案宽度
+    private Path mPathCircle;//背景绘图
+    private Path mPathStar;//图案绘图
+    private Paint mPaintCircle;//背景画笔
+    private Paint mPaintStar;//图案画笔
     private PathMeasure mStarPathMeasure;
     private ValueAnimator mStarAnimator;
 
